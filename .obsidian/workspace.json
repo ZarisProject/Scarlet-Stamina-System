@@ -6,7 +6,7 @@
       {
         "id": "d4bfa9da838f70c7",
         "type": "tabs",
-        "dimension": 31.455771519238397,
+        "dimension": 45.97701149425288,
         "children": [
           {
             "id": "f24302a5d4960bb5",
@@ -27,7 +27,7 @@
       {
         "id": "6c7fbea639576ca3",
         "type": "tabs",
-        "dimension": 68.5442284807616,
+        "dimension": 54.02298850574712,
         "children": [
           {
             "id": "3a5a964f01176a77",
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Documentation/Code Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Documentation/Code Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Documentation/Code Design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -211,18 +211,18 @@
   },
   "active": "f24302a5d4960bb5",
   "lastOpenFiles": [
-    "Documentation/Code Design.png",
-    "README.md",
     "Documentation/Code Design.md",
-    "Binaries/Win64/UnrealEditor.modules",
     "Binaries/Win64/UnrealEditor-ScarletStaminaSystem.pdb",
-    "Binaries/Win64/UnrealEditor-ScarletStaminaSystem.dll",
-    "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/UnrealEditor-ScarletStaminaSystem.exp",
     "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/UnrealEditor-ScarletStaminaSystem.lib",
-    "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/Module.ScarletStaminaSystem.cpp.dep.json",
-    "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/Module.ScarletStaminaSystem.cpp.sarif",
-    "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/Module.ScarletStaminaSystem.cpp.obj",
-    "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/Default.rc2.res",
-    "Intermediate/Build/Win64/x64/UnrealEditor/Development/ScarletStaminaSystem/RDa30144"
+    "Intermediate/Build/Win64/UnrealEditor/Inc/ScarletStaminaSystem/UHT/ScarletStaminaSystem.init.gen.cpp.tmp",
+    "Intermediate/Build/Win64/UnrealEditor/Inc/ScarletStaminaSystem/UHT/ScarletStaminaComponent.gen.cpp.tmp",
+    "Intermediate/Build/Win64/UnrealEditor/Inc/ScarletStaminaSystem/UHT/ScarletStaminaComponent.generated.h.tmp",
+    "Source/ScarletStaminaSystem/Public/akcqwvag.xhz~",
+    "Source/ScarletStaminaSystem/Private/kxsnmazp.ul3~",
+    "Source/ScarletStaminaSystem/Public/lsjbu2vw.url~",
+    "Source/ScarletStaminaSystem/Public/rrbzunpi.hgz~",
+    "README.md",
+    "Source/ScarletStaminaSystem/Private/4ob0t0qv.cxx~",
+    "Documentation/Code Design.png"
   ]
 }
