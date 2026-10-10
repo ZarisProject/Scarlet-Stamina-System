@@ -10,7 +10,7 @@ A simple UE5 stamina system, originally developed for Zaris project.
 
 Every time any amount of stamina is consumed a *Recovery* timer is started, once it is over, stamina recovery occurs. The amount of stamina recovered every second during the recovery is determined by *Stamina Recovery Rate*.
 
-When running out of stamina completely, a different - longer *Stamina Depletion Timeout* is used.
+When running out of stamina completely, a different - longer *Stamina Depletion Timeout* is used. Additionally, no stamina use can occur after depletion, until stamina values recovers above *Depletion Recovery Threshold*.
 
 User can:
 * Check if there is enough stamina with `IsEnoughStamina(float) -> bool`;
