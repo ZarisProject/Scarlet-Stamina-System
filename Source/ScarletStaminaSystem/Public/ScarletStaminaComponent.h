@@ -15,6 +15,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnNotEnoughStamina, float, Missing)
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStaminaDepleted);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStaminaStartedRecovery);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStaminaDepletionRecovered);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStaminaFullyRecovered);
 
 
@@ -55,6 +56,10 @@ public:
 	// Amount of stamina regenerated each second during stamina recovery
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default|Recovery")
 	float StaminaRecoveryRate = 10.f;
+
+	// Amount of stamina that has to recover after depletion, for depletion to go away (stamina can be consumed again)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Default|Recovery")
+	float DepletionRecoveryThreshold = 50.f;
 
 
 protected:
@@ -134,6 +139,10 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Delegates")
 	FOnStaminaStartedRecovery OnStaminaStartedRecovery;
 
+	// Fired when stamina passes the depletion recovery threshold after being depleted
+	UPROPERTY(BlueprintAssignable, Category = "Delegates")
+	FOnStaminaDepletionRecovered OnStaminaDepletionRecovered;
+		 
 	// Fired when stamina has finished recovering
 	UPROPERTY(BlueprintAssignable, Category = "Delegates")
 	FOnStaminaFullyRecovered OnStaminaFullyRecovered;

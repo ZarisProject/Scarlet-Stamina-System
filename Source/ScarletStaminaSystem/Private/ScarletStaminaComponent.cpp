@@ -112,10 +112,13 @@ void UScarletStaminaComponent::RecoverStamina(float Amount)
 
 	// Update stamina
 	Stamina += Amount;
-	if (Stamina >= MaxStamina)
-	{
+	if (Stamina > MaxStamina)
 		Stamina = MaxStamina;
-		Depleted = false; // Remove depletion when stamina is fully recovered
+
+	if (Depleted && (Stamina >= DepletionRecoveryThreshold))
+	{
+		Depleted = false; // Remove depletion when stamina has passed the threshold
+		OnStaminaDepletionRecovered.Broadcast();
 	}
 
 	float Delta = Stamina - OldStamina;
